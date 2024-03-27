@@ -12,12 +12,6 @@ from flask import Flask, render_template
 app = Flask(__name__)
 
 
-# html = """
-# <h1> Моя первая страница </h1>
-# <p> Привет, мир! <p/>
-# """
-
-
 @app.route('/')
 def hello():
     return 'hi!'
