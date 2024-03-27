@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> {% block title %}
+            Главная страница
+            {% endblock %}
+    </title>
+</head>
+<body>
+    <h2>--- Интернет-магазин одежды ---</h2>
+    <div class="navi_bar">
+        <ul>
+            <li class="nav-item"><a href="/cloth/" class="nav-link">Одежда</a></li>
+            <li class="nav-item"><a href="/shoes/" class="nav-link">Обувь</a></li>
+            <li class="nav-item"><a href="/jacket/" class="nav-link">Куртки</a></li>
+        </ul>
+    </div>
+    {% block body_content %}
+    <h3>Добро пожаловать в интернет-маразин. <br>
+        Для поиска необходимого товара выберите нужный раздел меню.
+    </h3>
+    {% endblock %}
+    <h2>--- Наши контакты: 5-444-333-22-11  email@email.ru ---</h2>
+</body>
+</html>
