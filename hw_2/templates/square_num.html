@@ -1,0 +1,14 @@
+{% extends 'base_207.html' %}
+
+{% block title %}
+{{ super() }} - {{ title }}
+{% endblock %}
+
+{% block content %}
+<form action="/">
+    <h3>
+        Исходное число: {{ number }} <br>
+        Квадрат числа составляет: {{ res }}
+    </h3>
+</form>
+{% endblock %}

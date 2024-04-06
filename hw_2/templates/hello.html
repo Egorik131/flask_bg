@@ -1,0 +1,12 @@
+{% extends 'base_209.html' %}
+
+{% block title %}
+    {{ super() }} - {{ title }}
+{% endblock %}
+
+{% block content %}
+<form action="/logout" method="get">
+    <p>Привет, {{ name }}</p>
+    <input type='submit' value='Выйти'>
+</form>
+{% endblock %}
