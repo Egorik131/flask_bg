@@ -2,6 +2,7 @@ from flask_sqlalchemy import SQLAlchemy
 
 db = SQLAlchemy()
 
+
 class Student(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     firstname = db.Column(db.String(20), nullable=False)
@@ -13,6 +14,7 @@ class Student(db.Model):
 
     def __repr__(self):
         return f'Студент (Имя: {self.firstname}, Фамилия: {self.lastname}, Факультет: {self.faculty})'
+
 
 class Faculty(db.Model):
     id = db.Column(db.Integer, primary_key=True)
