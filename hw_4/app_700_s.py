@@ -10,7 +10,7 @@
 import time
 from random import randint
 
-my_arr = [randint(1, 100) for i in range(1_000_000_00)]
+my_arr = [randint(1, 100) for i in range(1_000_000)]
 start_time = time.time()
 
 
