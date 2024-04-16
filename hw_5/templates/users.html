@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    {{ super() }} - {{ title }}
+ <p>Привет!!!</p>
+{% endblock %}
+
+{% block content %}
+<h3>Список пользователей</h3>
+<br>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">Имя пользователя</th>
+      <th scope="col">Email</th>
+      <th scope="col">Пароль</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for user in users %}
+    <tr>
+      <td>{{user.id}}</td>
+      <td>{{user.name}}</td>
+      <td>{{user.email}}</td>
+      <td>{{user.password}}</td>
+    </tr>
+    {% endfor %}
+    <tr>
+  </tbody>
+</table>
+<form action="/" method="post">
+    <input type='submit' value='Зарегистрировать нового пользователя'>
+</form>
+{% endblock %}
